@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maquete Automatizada com Arduino</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="borda-preta">
+      <h1>Maquete Automatizada com Arduino</h1>
+      <h2>Projeto: Gerador Eólico e Automação Escolar</h2>
+      <div class="foto-container">
+        <img src="imagens/perfil.png" alt="Professor Josué Luiz do Carmo" class="foto-perfil">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="introducao">
+      <h2>Sobre o Projeto</h2>
+      <p>Este projeto une robótica, física e sustentabilidade. A maquete automatizada com Arduino simula um sistema inteligente com sensores, iluminação automática e um gerador eólico funcional. 
+      Desenvolvido com criatividade, materiais simples e muito empenho pelos alunos.</p>
+    </section>
+
+    <section class="galeria">
+      <h2>Fotos do Projeto</h2>
+      <div class="grid-fotos">
+
+        <div class="foto-item">
+          <img src="imagens/maquete-escola-bene.png" alt="Montagem da base">
+          <p>Alunos montando a base da maquete utilizando palitos de picolé.</p>
+        </div>
+
+        <div class="foto-item">
+          <img src="imagens/maquete01.jpg" alt="Instalação do sistema elétrico">
+          <p>Instalação dos LEDs e motores controlados pelo Arduino.</p>
+        </div>
+
+        <div class="foto-item">
+          <img src="imagens/maquete02.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+        <div class="foto-item">
+          <img src="imagens/IMG_20221129_094530664_MF_PORTRAIT.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+        <div class="foto-item">
+          <img src="imagens/IMG_20221129_100153560.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+        <div class="foto-item">
+          <img src="imagens/IMG_20221129_100414160_MF_PORTRAIT.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+        <div class="foto-item">
+          <img src="imagens/IMG_20221130_095012836_MF_PORTRAIT.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+        <div class="foto-item">
+          <img src="imagens/IMG_20221130_125453494_MF_PORTRAIT.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+        <div class="foto-item">
+          <img src="imagens/IMG_20221202_130205928.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+        <div class="foto-item">
+          <img src="imagens/IMG_20230227_105818395_HDR.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+        <div class="foto-item">
+          <img src="imagens/IMG_20230227_111524496_HDR.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+        <div class="foto-item">
+          <img src="imagens/IMG_20230417_151933811_HDR.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+        <div class="foto-item">
+          <img src="imagens/IMG_20230417_151947261_HDR.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+        <div class="foto-item">
+          <img src="imagens/IMG_20230418_142945174.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+        <div class="foto-item">
+          <img src="imagens/IMG_20230504_155551568_HDR (1).jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+       <div class="foto-item">
+        <img src="imagens/IMG_20230504_155551568_HDR.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+        <div class="foto-item">
+         <img src="imagens/IMG_20230510_103107442_HDR.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+        <div class="foto-item">
+         <img src="imagens/IMG_20230510_103113069_HDR.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20230510_105322631_MP.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20230510_105437150.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20230510_105444925.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+        <div class="foto-item">
+             <img src="imagens/IMG_20230515_095939762_HDR.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+        <div class="foto-item">
+            <img src="imagens/IMG_20230516_105453108_HDR.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20230522_101153736_HDR.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20230522_101157765_HDR.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20230522_150734316_HDR.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20230522_150735471_HDR.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20230522_152137752_HDR.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+         <div class="foto-item">
+        <img src="imagens/IMG_20230607_105612348_MF_PORTRAIT (1).jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+         <div class="foto-item">
+        <img src="imagens/IMG_20230607_105612348_MF_PORTRAIT.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+<div class="foto-item">
+         <img src="imagens/IMG_20230607_105618672_MF_PORTRAIT (1).jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+<div class="foto-item">
+         <img src="imagens/IMG_20230607_105618672_MF_PORTRAIT.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+         <div class="foto-item">
+        <img src="imagens/IMG_20230607_105624016_MF_PORTRAIT (1).jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+         <div class="foto-item">
+        <img src="imagens/IMG_20230607_105624016_MF_PORTRAIT.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+ <div class="foto-item">
+         <img src="imagens/IMG_20230607_105634412_MF_PORTRAIT (1).jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+ <div class="foto-item">
+         <img src="imagens/IMG_20230607_105642264_MF_PORTRAIT (1).jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+    
+ <div class="foto-item">
+         <img src="imagens/IMG_20230607_105634412_MF_PORTRAIT.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+ <div class="foto-item">
+         <img src="imagens/IMG_20230607_105636214_MF_PORTRAIT (1).jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+ <div class="foto-item">
+         <img src="imagens/IMG_20230607_105636214_MF_PORTRAIT (2).jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+ <div class="foto-item">
+         <img src="imagens/IMG_20230607_105636214_MF_PORTRAIT (3).jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+ <div class="foto-item">
+         <img src="imagens/IMG_20230607_105636214_MF_PORTRAIT.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+ <div class="foto-item">
+         <img src="imagens/IMG_20230607_105642264_MF_PORTRAIT (2).jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+ <div class="foto-item">
+         <img src="imagens/IMG_20230607_105642264_MF_PORTRAIT (3).jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+ <div class="foto-item">
+         <img src="imagens/IMG_20230607_105642264_MF_PORTRAIT.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+ <div class="foto-item">
+         <img src="imagens/IMG_20230607_105646774_MF_PORTRAIT (1).jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+ <div class="foto-item">
+         <img src="imagens/IMG_20230607_105646774_MF_PORTRAIT (2).jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+        <div class="foto-item">
+         <img src="imagens/IMG_20230607_105646774_MF_PORTRAIT.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+          
+        <div class="foto-item"> 
+         <img src="imagens/IMG_20230607_105739739_MF_PORTRAIT (1).jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20230607_105739739_MF_PORTRAIT (2).jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20230607_105739739_MF_PORTRAIT (3).jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20230607_105739739_MF_PORTRAIT.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20230607_105819959_MF_PORTRAIT (1).jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20230607_105819959_MF_PORTRAIT (2).jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20230607_105819959_MF_PORTRAIT (3).jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20230607_105819959_MF_PORTRAIT.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20230607_105825342 (1).jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20230607_105825342 (2).jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20230607_105825342.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20221129_094530664_MF_PORTRAIT.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20230607_105917644_MF_PORTRAIT.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20230607_105933149_MF_PORTRAIT.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20221129_094530664_MF_PORTRAIT.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20230612_104545131 (1).jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20230612_104550253_HDR.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20230612_104602933_HDR (1).jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20230612_141730743.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20230612_141844564 (1).jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20230612_141943392 (1).jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20230929_142129206.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20230929_142647723_HDR.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20230929_142654087.jpg"Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20230929_155729540_HDR.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+
+        
+         <div class="foto-item">
+            <img src="imagens/IMG_20230929_161138426_HDR.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20231002_144846361_HDR.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20231009_152412012_HDR.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20231004_161054421_HDR.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20231009_152412012_HDR.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20231009_152806226.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20231009_152815384.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20231009_152824624.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20231018_144404958_HDR.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20231020_143744708_HDR.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+
+         <div class="foto-item">
+            <img src="imagens/IMG_20231020_143753454.jpg" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+        
+         <div class="foto-item">
+            <img src="imagens/maquete-escola-bene.png" alt="Gerador eólico">
+          <p>Montagem do gerador eólico com hélices reaproveitadas de ventilador.</p>
+        </div>
+
+
+        <!-- Continue até 10 fotos -->
+      </div>
+    </section>
+
+    <section class="videos">
+      <h2>Vídeos do Projeto</h2>
+      <div class="grid-videos">
+
+        <div class="video-item">
+          <video controls>
+            <source src="videos/02.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+          </video>
+          <p>Funcionamento do sistema automatizado de iluminação da maquete.</p>
+        </div>
+
+        <div class="video-item">
+          <video controls>
+            <source src="videos/03.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+          </video>
+          <p>Gerador eólico em funcionamento, alimentando o sistema de LEDs.</p>
+        </div>
+
+
+        
+        <div class="video-item">
+          <video controls>
+            <source src="videos/04.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+          </video>
+          <p>Gerador eólico em funcionamento, alimentando o sistema de LEDs.</p>
+        </div>
+
+        
+        <div class="video-item">
+          <video controls>
+            <source src="videos/05.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+          </video>
+          <p>Gerador eólico em funcionamento, alimentando o sistema de LEDs.</p>
+        </div>
+
+        
+        <div class="video-item">
+          <video controls>
+            <source src="videos/06.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+          </video>
+          <p>Gerador eólico em funcionamento, alimentando o sistema de LEDs.</p>
+        </div>
+
+        
+        <div class="video-item">
+          <video controls>
+            <source src="videos/07.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+          </video>
+          <p>Gerador eólico em funcionamento, alimentando o sistema de LEDs.</p>
+        </div>
+
+        
+        <div class="video-item">
+          <video controls>
+            <source src="videos/09.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+          </video>
+          <p>Gerador eólico em funcionamento, alimentando o sistema de LEDs.</p>
+        </div>
+
+        
+        <div class="video-item">
+          <video controls>
+            <source src="videos/10.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+          </video>
+          <p>Gerador eólico em funcionamento, alimentando o sistema de LEDs.</p>
+        </div>
+
+
+        
+        <div class="video-item">
+          <video controls>
+            <source src="videos/11.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+          </video>
+          <p>Gerador eólico em funcionamento, alimentando o sistema de LEDs.</p>
+        </div>
+
+
+        
+        <div class="video-item">
+          <video controls>
+            <source src="videos/12.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+          </video>
+          <p>Gerador eólico em funcionamento, alimentando o sistema de LEDs.</p>
+        </div>
+
+        
+        <div class="video-item">
+          <video controls>
+            <source src="videos/13.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+          </video>
+          <p>Gerador eólico em funcionamento, alimentando o sistema de LEDs.</p>
+        </div>
+
+
+         <div class="video-item">
+          <video controls>
+            <source src="videos/14.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+          </video>
+          <p>Funcionamento do sistema automatizado de iluminação da maquete.</p>
+        </div>
+
+         <div class="video-item">
+          <video controls>
+            <source src="videos/15.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+          </video>
+          <p>Funcionamento do sistema automatizado de iluminação da maquete.</p>
+        </div>
+
+         <div class="video-item">
+          <video controls>
+            <source src="videos/17.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+          </video>
+          <p>Funcionamento do sistema automatizado de iluminação da maquete.</p>
+        </div>
+
+        <div class="video-item">
+          <video controls>
+            <source src="videos/18.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+          </video>
+          <p>Funcionamento do sistema automatizado de iluminação da maquete.</p>
+        </div>
+
+       
+
+
+        <!-- Continue até 10 vídeos -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="borda-preta footer-conteudo">
+      <div class="foto-footer">
+        <img src="imagens/perfil.png" alt="Professor Josué Luiz do Carmo" class="foto-perfil-footer">
+      </div>
+      <p>© 2025 - Professor Josué Luiz do Carmo | Projeto Educacional Estado-SP</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
