@@ -101,26 +101,7 @@ p {
   font-size: 0.95em;
 }
 
-/* Vídeos */
-.grid-videos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 25px;
-}
 
-.video-item {
-  background: #fff;
-  border: 2px solid #fbc531;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  padding: 10px;
-  text-align: center;
-}
-
-video {
-  width: 50%;
-  border-radius: 10px;
-}
 
 /* Rodapé */
 footer {
@@ -226,6 +207,7 @@ footer p {
     width: 90%;
   }
 }
+
 
 
 
