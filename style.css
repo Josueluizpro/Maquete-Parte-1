@@ -136,81 +136,70 @@ footer p {
   font-weight: bold;
 
   }
-/* ====== Seção de Vídeos da Maquete ====== */
-.videos-section {
+
+
+/* ======= NOVO PADRÃO DE VÍDEOS ======= */
+
+.videos {
   text-align: center;
-  margin: 40px auto;
-  padding: 20px;
+  padding: 40px 20px;
   max-width: 1300px;
+  margin: 0 auto;
 }
 
-.videos-section h2 {
-  color: #ffcc00; /* amarelo vibrante */
+.videos h2 {
   font-size: 1.8em;
-  margin-bottom: 25px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+  color: #000;
+  text-transform: uppercase;
   border-bottom: 3px solid #000;
   display: inline-block;
   padding-bottom: 5px;
 }
 
-/* --- Grade de vídeos lado a lado --- */
-.videos-grid {
+/* Container que organiza os vídeos lado a lado */
+.videos-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 25px;
 }
 
-.video-card {
-  background-color: #fffbea;
+/* Cada vídeo individual */
+.video-box {
+  background: #ffffff;
   border: 2px solid #000;
   border-radius: 20px;
   padding: 15px;
-  width: 360px; /* controla quantos cabem por linha */
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  width: 380px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.25);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.video-card:hover {
+.video-box:hover {
   transform: translateY(-5px);
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.35);
 }
 
-/* Responsividade dos vídeos */
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  height: 0;
-  overflow: hidden;
-  border-radius: 15px;
-}
-
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
+/* Área do vídeo responsiva */
+.video-box iframe {
   width: 100%;
-  height: 100%;
+  height: 215px;
   border: none;
+  border-radius: 10px;
+  display: block;
 }
 
-.video-card p {
+/* Texto abaixo de cada vídeo */
+.video-box p {
   margin-top: 10px;
-  font-size: 1em;
   color: #333;
+  font-size: 0.95em;
 }
 
-/* --- Ajuste para telas menores (celular) --- */
+/* Ajuste para celular */
 @media (max-width: 900px) {
-  .video-card {
+  .video-box {
     width: 90%;
   }
 }
-
-
-
-
-
-
-
